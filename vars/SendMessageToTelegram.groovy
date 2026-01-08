@@ -1,4 +1,4 @@
-def call(String message,String Chat_Id,string Token){
+def call(String message,String Chat_Id,String Token){
     def msg = "${message}"
     sh """
         curl -s -X POST "https://api.telegram.org/bot${token}/sendMessage" \
